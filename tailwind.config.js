@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         "fv-primary": colors.blue,
