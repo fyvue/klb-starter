@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import App from "./App.vue";
+import App from './App.vue'
+import DefaultLoader from './components/DefaultLoader.vue'
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import App from "./App.vue";
       <App />
     </template>
     <template #fallback>
-      <FyLoader id="app-suspender" :force="true" :show-loading-text="false" />
+      <DefaultLoader id="app-suspender" :force="true" />
     </template>
   </Suspense>
 </template>

@@ -12,12 +12,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "lib": ["ESNext", "DOM"],
     "types": [
-      "vite/client",
+      "vite/client"
     ],
     "baseUrl": ".",
     "paths": {
@@ -32,5 +29,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/main.ts",
-  ]
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

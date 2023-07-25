@@ -1,6 +1,7 @@
 #js
 env/
-
+dev-dist/
+.venv/  
 # Logs
 logs
 *.log

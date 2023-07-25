@@ -1,8 +1,6 @@
-import { fileURLToPath, URL } from "url";
+import config from './vite.config'
 
-const config = require("./vite.config.ts");
-
-module.exports = Object.assign(config.default, {
+export default Object.assign(config, {
   ssr: {
     noExternal: /./,
   },
@@ -16,4 +14,4 @@ module.exports = Object.assign(config.default, {
       },
     },
   },
-});
+})

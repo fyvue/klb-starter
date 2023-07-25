@@ -1,12 +1,22 @@
 export default [
   {
-    path: "/",
-    name: "indexView",
-    component: () => import("@/views/IndexView.vue"),
+    path: '/',
+    name: 'home',
+    component: () => import('@/pages/HomePage.vue'),
   },
   {
-    name: "notFoundView",
-    path: "/:path(.*)",
-    component: () => import("@/views/NotFoundView.vue"),
+    path: '/login',
+    name: 'login',
+    component: () => import('@/pages/LoginPage.vue'),
   },
-];
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('@/pages/ContactPage.vue'),
+  },
+  {
+    name: 'notFoundView',
+    path: '/:path(.*)',
+    component: () => import('@/pages/NotFoundPage.vue'),
+  },
+]
